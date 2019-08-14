@@ -13,7 +13,8 @@ p = pyaudio.PyAudio()
 
 stream = p.open(format=FORMAT,channels=CHANNELS,rate=RATE,input_device_index=DEV_INDEX,input=True,output=False,frames_per_buffer=CHUNK)
  
-sample_jump = CHUNK/64
+#sample_jump = CHUNK/64
+sample_jump = 2
 sample_scale = 100
 sample_bias = 32 
 

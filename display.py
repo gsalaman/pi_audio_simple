@@ -50,6 +50,7 @@ red = (255,0,0)
 blue = (0,0,255)
 green = (0,255,0)
 
+err_count = 0
 
 
 try:
@@ -67,7 +68,8 @@ try:
       try:
         new_y = sound_data[data_index] 
       except:
-        print("sound data index issue")
+        err_count = err_count+1
+        print("sound data index issue"+str(err_count))
         continue
       draw.line((last_x, last_y, new_x, new_y),fill=blue) 
       last_x = new_x

@@ -8,4 +8,6 @@ sample_generator.py is the generator program.  It creates a file called "sound.d
 
 display.py reads that file and displays it onto the RGB matrix.  There can be collisions that cause indexing errors...to deal with those I'm simply using a "try" block and having the exception just continue (skipping that update).
 
-
+## FFT notes
+Trying numpy first...the pip install didn't work.  Instead, use:
+sudo apt-get install python-numpy
