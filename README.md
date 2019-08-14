@@ -11,3 +11,9 @@ display.py reads that file and displays it onto the RGB matrix.  There can be co
 ## FFT notes
 Trying numpy first...the pip install didn't work.  Instead, use:
 sudo apt-get install python-numpy
+
+sample_gen_fft.py will produce time and frequency data.  Freq data is currently 64 points, normalized to a 64-pixel display.
+
+display_freq.py reads that file and displays it...also currently for 64x64 display.
+
+
